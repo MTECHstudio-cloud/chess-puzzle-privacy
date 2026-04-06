@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy • TacticMax by MTech Forge</title>
+<style>
+:root{
+    --bg:#eef2e8;
+    --surface:#fffdf7;
+    --surface-strong:#ffffff;
+    --text:#1d241c;
+    --muted:#5e695d;
+    --border:rgba(29,36,28,0.10);
+    --accent:#b4822c;
+    --accent-deep:#8a631f;
+    --accent-soft:#f3e4c5;
+    --shadow:0 24px 60px rgba(26,34,22,0.10);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Georgia, "Times New Roman", serif;
+    background:
+        radial-gradient(circle at top left, rgba(180,130,44,0.16), transparent 26rem),
+        linear-gradient(180deg, #f8faef 0%, var(--bg) 52%, #e7ecdf 100%);
+    color:var(--text);
+}
+
+.page{
+    max-width:980px;
+    margin:0 auto;
+    padding:32px 20px 72px;
+}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+    padding:36px 32px 28px;
+    border:1px solid var(--border);
+    border-radius:28px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.98), rgba(250,246,234,0.96)),
+        var(--surface);
+    box-shadow:var(--shadow);
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:auto -80px -110px auto;
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(180,130,44,0.18), rgba(180,130,44,0));
+    pointer-events:none;
+}
+
+.brand-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    width:140px;
+    max-width:42vw;
+    height:auto;
+    filter:drop-shadow(0 10px 28px rgba(32,36,28,0.14));
+}
+
+.eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--accent-deep);
+    background:var(--accent-soft);
+}
+
+.eyebrow::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--accent);
+}
+
+h1{
+    margin:18px 0 12px;
+    font-size:clamp(2.4rem, 5vw, 4rem);
+    line-height:0.95;
+    letter-spacing:-0.04em;
+}
+
+.hero-copy{
+    max-width:720px;
+    font-size:18px;
+    line-height:1.75;
+    color:var(--muted);
+    margin:0;
+}
+
+.hero-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
+}
+
+.meta-pill{
+    padding:10px 14px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,0.72);
+    font-size:14px;
+    color:var(--muted);
+}
+
+.quick-summary{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:16px;
+    margin:22px 0 28px;
+}
+
+.summary-card{
+    padding:18px;
+    border-radius:22px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,0.72);
+}
+
+.summary-card strong{
+    display:block;
+    font-size:15px;
+    margin-bottom:8px;
+}
+
+.summary-card p{
+    margin:0;
+    font-size:14px;
+    line-height:1.7;
+    color:var(--muted);
+}
+
+.section{
+    margin-top:18px;
+    padding:28px 30px;
+    border-radius:24px;
+    border:1px solid var(--border);
+    background:var(--surface-strong);
+    box-shadow:0 14px 32px rgba(20,24,18,0.05);
+}
+
+.section h2{
+    margin:0 0 14px;
+    font-size:24px;
+    letter-spacing:-0.03em;
+}
+
+.section p,
+.section li{
+    font-size:16px;
+    line-height:1.8;
+    color:#334032;
+}
+
+.section p{
+    margin:0 0 14px;
+}
+
+.section ul{
+    margin:0 0 14px;
+    padding-left:22px;
+}
+
+.section li + li{
+    margin-top:8px;
+}
+
+.note{
+    padding:16px 18px;
+    border-left:4px solid var(--accent);
+    border-radius:16px;
+    background:#fcf5e7;
+    color:#3f382a;
+}
+
+.contact-card{
+    display:grid;
+    gap:10px;
+    padding:18px 20px;
+    border-radius:20px;
+    background:linear-gradient(135deg, #fbf3e1, #fffaf0);
+    border:1px solid rgba(138,99,31,0.18);
+}
+
+.contact-card strong{
+    font-size:16px;
+}
+
+a{
+    color:var(--accent-deep);
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.footer{
+    margin-top:24px;
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+}
+
+@media (max-width:760px){
+    .page{
+        padding:20px 14px 48px;
+    }
+
+    .hero{
+        padding:24px 20px;
+        border-radius:22px;
+    }
+
+    .quick-summary{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:22px 18px;
+        border-radius:20px;
+    }
+
+    h1{
+        line-height:1;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg:#121613;
+        --surface:#181f1a;
+        --surface-strong:#182019;
+        --text:#f0f2ec;
+        --muted:#c2cbbf;
+        --border:rgba(240,242,236,0.11);
+        --accent:#d6a24b;
+        --accent-deep:#f0c46f;
+        --accent-soft:rgba(214,162,75,0.14);
+        --shadow:0 24px 60px rgba(0,0,0,0.28);
+    }
+
+    body{
+        background:
+            radial-gradient(circle at top left, rgba(214,162,75,0.12), transparent 28rem),
+            linear-gradient(180deg, #151914 0%, #101410 52%, #0d110d 100%);
+    }
+
+    .hero,
+    .section{
+        background:linear-gradient(180deg, rgba(26,32,25,0.98), rgba(20,26,20,0.98));
+    }
+
+    .summary-card,
+    .meta-pill{
+        background:rgba(255,255,255,0.03);
+    }
+
+    .section p,
+    .section li{
+        color:#d5ddd2;
+    }
+
+    .note{
+        background:rgba(214,162,75,0.12);
+        color:#f0e1bc;
+    }
+
+    .contact-card{
+        background:linear-gradient(135deg, rgba(214,162,75,0.10), rgba(255,255,255,0.03));
+    }
+}
+</style>
+</head>
+<body>
+<main class="page">
+    <section class="hero">
+        <div class="brand-row">
+            <img src="logo.png" alt="TacticMax logo" class="logo">
+            <div>
+                <div class="eyebrow">MTech Forge</div>
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
+
+        <p class="hero-copy">
+            This Privacy Policy explains how <strong>TacticMax</strong>, a chess training app by
+            <strong>MTech Forge</strong>, handles information when you use the app. TacticMax is
+            designed to work without account creation or direct personal profile collection, while
+            still using limited third-party services for ads, billing, and platform features.
+        </p>
+
+        <div class="hero-meta">
+            <div class="meta-pill">Applies to: Chess Puzzles: TacticMax</div>
+            <div class="meta-pill">Developer: MTech Forge</div>
+            <div class="meta-pill">Last updated: April 6, 2026</div>
+        </div>
+
+        <div class="quick-summary">
+            <div class="summary-card">
+                <strong>No account required</strong>
+                <p>You can use TacticMax without signing up with your name, email address, or profile.</p>
+            </div>
+            <div class="summary-card">
+                <strong>Progress stays on device</strong>
+                <p>Settings, puzzle progress, streaks, ratings, and session history are stored locally on your device.</p>
+            </div>
+            <div class="summary-card">
+                <strong>Google services are used</strong>
+                <p>Google AdMob, consent tools, and Google Play Billing may process technical or purchase-related data under their own policies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>1. Information We Collect Directly</h2>
+        <p>
+            TacticMax does not require you to create an account or submit personal profile
+            information such as your name, email address, home address, or phone number in order
+            to use the app.
+        </p>
+        <p>
+            MTech Forge does not operate a user account system, cloud sync service, or player
+            profile backend for TacticMax at this time.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>2. Information Stored Locally on Your Device</h2>
+        <p>
+            To provide the app's core functionality, TacticMax stores app data locally on your
+            device. This local storage may include:
+        </p>
+        <ul>
+            <li>App settings such as sound preferences, board theme, coordinates, vision trainer options, and onboarding choices.</li>
+            <li>Puzzle training data such as solved and failed attempts, puzzle IDs, ratings, hint use, and session summaries.</li>
+            <li>Progress data such as current rating, best rating, best streak, best rush score, and daily puzzle status.</li>
+            <li>Reminder and notification state, including whether daily streak reminders are enabled.</li>
+            <li>Review prompt state, such as whether you dismissed a review request or opened the Play Store review flow.</li>
+            <li>Purchase status stored locally after Google Play confirms ownership of the app's ad-free product.</li>
+        </ul>
+        <p class="note">
+            Unless your device or operating system backs up app data automatically, removing the
+            app may also remove this locally stored progress.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>3. Notifications and Reminder Features</h2>
+        <p>
+            TacticMax can offer optional local reminder notifications to help you maintain your
+            training streak or return for daily practice.
+        </p>
+        <ul>
+            <li>Notifications are optional and can be enabled or disabled in the app settings.</li>
+            <li>On supported Android devices, the app may request notification permission before reminders are enabled.</li>
+            <li>The app stores reminder state locally so it can determine whether a reminder should be scheduled.</li>
+        </ul>
+        <p>
+            TacticMax does not use reminders to collect contact information, build marketing lists,
+            or create personal user accounts.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>4. Advertising and Consent</h2>
+        <p>
+            TacticMax may display ads through <strong>Google AdMob</strong>. Ads are currently used
+            in certain parts of the app for non-Pro users, including puzzle rush-related flows.
+        </p>
+        <p>
+            When AdMob is used, Google and its partners may automatically receive or process
+            certain information such as device identifiers, advertising identifiers, IP address,
+            app interaction data, diagnostics, and approximate location inferred from IP address,
+            subject to Google's own systems and policies.
+        </p>
+        <p>
+            Where required, the app may present consent choices and privacy options before ads are
+            requested. You may also have access to a <strong>Manage Consent</strong> option inside
+            the app.
+        </p>
+        <p>
+            Learn more here:
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>5. In-App Purchases</h2>
+        <p>
+            TacticMax offers an optional Google Play in-app purchase for an ad-free or Pro-style
+            entitlement. All payments are processed by <strong>Google Play Billing</strong>, not by
+            MTech Forge directly.
+        </p>
+        <ul>
+            <li>MTech Forge does not receive or store your full payment card details.</li>
+            <li>The app may receive purchase status information from Google Play, such as whether a purchase is owned, restored, pending, or available.</li>
+            <li>This purchase status may be stored locally on your device so the app can unlock the correct features.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>6. Review Prompts, External Store Links, and Support</h2>
+        <p>
+            TacticMax may occasionally prompt you to rate the app after certain training
+            milestones. If you choose to continue, the app may open the Google Play listing for
+            TacticMax.
+        </p>
+        <p>
+            The app also includes links for privacy policy access and contacting the developer.
+            When you choose to use those links, your interaction with external services such as
+            Google Play, your email app, or your web browser will be governed by those services'
+            own privacy practices.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>7. How We Share Information</h2>
+        <p>
+            MTech Forge does not sell your personal information. TacticMax also does not maintain
+            its own player account database for sharing or reselling user profiles.
+        </p>
+        <p>
+            However, information may be processed by third-party providers that support specific
+            app features, such as:
+        </p>
+        <ul>
+            <li>Google AdMob and related consent services for advertising and ad privacy controls.</li>
+            <li>Google Play Billing for purchase processing and purchase restoration.</li>
+            <li>Platform services such as your device's notification system, email app, browser, or Play Store app when you choose to use them.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>8. Children's Privacy</h2>
+        <p>
+            TacticMax is a chess training app and is not built around direct collection of personal
+            profile information from children. We do not knowingly ask children to create accounts
+            or submit names or email addresses inside the app.
+        </p>
+        <p>
+            If a child uses TacticMax, third-party services such as Google AdMob or Google Play
+            may still process technical data according to their own policies and platform rules.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>9. Security and Data Retention</h2>
+        <p>
+            Because most app data is stored locally on your device, the security of that data also
+            depends on your device security, operating system protections, and backup settings.
+            TacticMax does not guarantee indefinite retention of local data after app removal,
+            device reset, or storage cleanup.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>10. Changes to This Policy</h2>
+        <p>
+            MTech Forge may update this Privacy Policy if TacticMax adds new features, new
+            third-party services, or different data handling practices. The latest version should
+            always be posted with an updated effective date.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>11. Contact</h2>
+        <div class="contact-card">
+            <strong>MTech Forge</strong>
+            <span>Developer of Chess Puzzles: TacticMax</span>
+            <a href="mailto:mtechforge.dev@gmail.com">mtechforge.dev@gmail.com</a>
+        </div>
+    </section>
+
+    <div class="footer">
+        Privacy Policy for TacticMax by MTech Forge
+    </div>
+</main>
+</body>
+</html>
